@@ -1,3 +1,4 @@
+import 'package:appbarclr/colorList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,17 +12,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Color _appBarColor = Colors.blue;
-
-  final Map<Color, String> _colorNames = {
-    Colors.red: "Red",
-    Colors.green: "Green",
-    Colors.blue: "Blue",
-    Colors.orange: "Orange",
-    Colors.purple: "Purple",
-    Colors.yellow: "Yellow",
-    Colors.pink: "Pink",
-    Colors.teal: "Teal",
-  };
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +35,7 @@ class _MyAppState extends State<MyApp> {
               },
               icon: Icon(Icons.arrow_downward, color: Colors.black,),
               itemBuilder: (BuildContext context) {
-                return _colorNames.keys.map((Color color) {
+                return colorNames.keys.map((Color color) {
                   return PopupMenuItem<Color>(
                     value: color,
                     child: Row(
@@ -54,7 +44,7 @@ class _MyAppState extends State<MyApp> {
                           backgroundColor: color,
                         ),
                         SizedBox(width: 10),
-                        Text(_colorNames[color]!),
+                        Text(colorNames[color]!),
                       ],
                     ),
                   );
