@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
                   _appBarColor = color;
                 });
               },
-              icon: Icon(Icons.arrow_downward, color: Colors.black,),
+              icon: popmenu,
               itemBuilder: (BuildContext context) {
                 return colorNames.keys.map((Color color) {
                   return PopupMenuItem<Color>(
