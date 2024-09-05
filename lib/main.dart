@@ -26,6 +26,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(
+          color: Colors.blue
+        )
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text("Select colors "),
