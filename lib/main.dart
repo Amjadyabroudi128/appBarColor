@@ -1,4 +1,5 @@
 import 'package:appbarclr/colorList.dart';
+import 'package:appbarclr/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         appBarTheme: AppBarTheme(
-          color: Colors.blue
+          color: appBar
         )
       ),
       home: Scaffold(
