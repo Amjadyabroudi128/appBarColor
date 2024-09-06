@@ -59,9 +59,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Text(
            "select colors for AppBar",
-            style: TextStyle(
-              fontSize: 25,
-            ),
+            style: centre
           ),
         ),
       ),
