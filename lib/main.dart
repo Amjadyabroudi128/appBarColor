@@ -32,6 +32,7 @@ class _MyAppState extends State<MyApp> {
           actions: <Widget>[
             PopupMenuButton<Color>(
               elevation: 8,
+              position: PopupMenuPosition.over,
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
                   Radius.circular(14)
