@@ -16,6 +16,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    String selectClr = "select colors";
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -26,7 +27,7 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Select colors "),
+          title: Text(selectClr),
           backgroundColor: _appBarColor,
           actions: <Widget>[
             PopupMenuButton<Color>(
