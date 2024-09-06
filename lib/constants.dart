@@ -9,3 +9,9 @@ MaterialColor myColor = Colors.blue;
 
 // icon
 Icon popmenu = Icon(Icons.arrow_downward, color: iconclr);
+
+// styles
+TextStyle centre = TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.bold
+);
