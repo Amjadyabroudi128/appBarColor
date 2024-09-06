@@ -31,6 +31,11 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: _appBarColor,
           actions: <Widget>[
             PopupMenuButton<Color>(
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(14)
+                )
+              ),
               onSelected: (Color color) {
                 setState(() {
                   _appBarColor = color;
