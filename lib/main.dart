@@ -13,7 +13,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Color _appBarColor = Colors.blue;
-
+  Color getTextColor(Color backgroundColor) {
+    return ThemeData.estimateBrightnessForColor(backgroundColor) == Brightness.dark
+        ? Colors.white
+        : Colors.black;
+  }
   @override
   Widget build(BuildContext context) {
     String selectClr = "select colors";
@@ -22,12 +26,13 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: myColor,
         appBarTheme: AppBarTheme(
-          color: appBar
+          color: appBar,
         )
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(selectClr),
+          title: Text(selectClr, style: TextStyle(color: getTextColor(_appBarColor)), // Dynamically set text color
+          ),
           backgroundColor: _appBarColor,
           actions: <Widget>[
             PopupMenuButton<Color>(
