@@ -1,5 +1,6 @@
 import 'package:appbarclr/colorList.dart';
 import 'package:appbarclr/constants.dart';
+import 'package:appbarclr/textColor.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +14,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   Color _appBarColor = Colors.blue;
-  Color getTextColor(Color backgroundColor) {
-    return ThemeData.estimateBrightnessForColor(backgroundColor) == Brightness.dark
-        ? Colors.white
-        : Colors.black;
-  }
   @override
   Widget build(BuildContext context) {
     String selectClr = "select colors";
