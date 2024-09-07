@@ -15,3 +15,5 @@ TextStyle centre = TextStyle(
   fontSize: 25,
   fontWeight: FontWeight.bold
 );
+// spase
+const width10 = SizedBox(width: 10);

@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
                         CircleAvatar(
                           backgroundColor: color,
                         ),
-                        SizedBox(width: 10),
+                        width10,
                         Text(colorNames[color]!),
                       ],
                     ),
