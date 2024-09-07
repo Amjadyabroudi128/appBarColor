@@ -17,6 +17,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     String selectClr = "select colors";
+    String centreText = "select colors for AppBar";
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -66,7 +67,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: Text(
-           "select colors for AppBar",
+           centreText,
             style: centre
           ),
         ),
